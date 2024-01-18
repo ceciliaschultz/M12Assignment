@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M12 Assignment - The Music Player Application</title>
+    <!-- <script src="js/oop-practice.js" defer></script> -->
+    <script src="js/player.js" defer></script>
+
+    <!-- 
+	Get rid of the "Failed to load resource: the server responded with a status of 404 (Not Found)" error at load time (favico error)
+    https://stackoverflow.com/questions/39149846/why-am-i-seeing-a-404-not-found-error-failed-to-load-favicon-ico-when-not-usin
+	-->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
+
+    <style>
+        .card   {margin: 20px;}
+    </style>
+</head>
+
+<body>
+    <header id="main-header" class="bg-dark text-white p-4 mb-3">
+        <div class="container-fluid">
+            <h1 class="header-title">The Music Player</h1>
+        </div>
+    </header>
+
+    <div class="card w-50 mb-2" >
+        <div class="card-body">
+           <h5 class="card-title">Albums</h5>
+          <select id="selAlbum" required></select>
+        </div>
+       
+        <div class="card-body">
+            <button id="btnPlay" class="btn btn-primary sm">Play</button>
+            <button id="btnShowFavorite" class="btn btn-primary sm">Show Favorite Album</button>
+        </div>
+
+        <div class="card-body">
+            <p id="message"></p>
+            <p id="favoriteAlbum"></p>
+        </div>
+      </div>
+
+
+
+
+</body>
+
+</html>
